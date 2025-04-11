@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && webpack",
+    "build": "tsc && webpack && mkdir -p public && cp ./src/public/index.html public/",
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
     "start": "node dist/index.js",
     "watch": "webpack --watch",
